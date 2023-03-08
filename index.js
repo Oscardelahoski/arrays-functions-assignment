@@ -60,7 +60,7 @@ function changeFruit( fruit ) {
     return fruit;
 }
 
-console.log (changeFruit(fruit));
+console.log (changeFruit (fruit));
 
 // The value of fruit after calling the function changeFruit will be 
 //[ 'apple', 'mango', 'orange' ]
@@ -80,4 +80,16 @@ console.log (maxValue(numbers));
 
 //Answer to question No 5
 
+function valTimesIndex (arrayOfNumbers) {
+    const result = [];
+    for(let i = 0; i < arrayOfNumbers.length; i++) {
+        let multipleOfIndex = arrayOfNumbers[i]*i
+        result.push (multipleOfIndex);
+    }
+    return result
+
+}
+
+let numbersMultipliedByIndex = valTimesIndex ([2,3,4]);
+console.log (numbersMultipliedByIndex);
 
